@@ -1,0 +1,259 @@
+body {
+    background: url(imagenes/fondo.png);
+}
+
+
+/* reset */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Inter" sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 15px;
+}
+
+/* cabecera */
+
+.cabecera{
+    display: flex;
+    padding-top: 1.5rem;
+    padding-left: 4rem;
+}
+
+/* advertencia */
+
+.advertencia{
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-family: system-ui;
+}
+
+.iconito{
+    float: left;
+    width: 17px; 
+    height: 17px;
+    margin-top: -1rem;
+    padding-left: 7rem;
+} 
+
+.letra-adver{
+    font-weight: bold;
+    font-size: 11px;
+    margin-top: -1rem;
+    padding-left: .3rem;
+}
+
+/* sesion-botones */
+.contenedor-botones{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-left: -4rem;
+    gap: 1.3rem;
+}
+
+.boton-encriptar, .boton-desencriptar{
+    border: 2px solid aliceblue;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    padding-top: .7rem;
+    padding-bottom: .7rem;
+    transition: 1.5s all;
+}
+
+.boton-encriptar:hover, .boton-desencriptar:hover{
+    transform: scale(1.1);
+}
+.boton-encriptar{
+    background-color: #124559;
+    color: aliceblue;
+    padding-left: 6.2rem;
+    padding-right: 6.2rem;
+}
+
+.boton-desencriptar{
+    background-color: #124559;
+    color: aliceblue;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+/* sesion-principal */
+
+main{
+    display: flex;
+    height: 33rem;
+    margin-bottom: 2rem;
+    width: 100%;
+    justify-content: space-between;
+    
+}
+
+.seccion1{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding-top: 2rem;
+    
+    
+}
+
+.area{
+    background: #161a1d;
+    box-shadow: 10px 10px 15px 10px black;
+    border: none;
+    color: aliceblue;
+    display: flex;
+    font-size: 25px;
+    line-height: 2rem;
+    padding: .8rem;
+    resize: none;
+    width: 74%; 
+    height: 20rem;
+    margin: .8rem 6rem;
+    width: 74%;
+    
+}
+
+/* sesion2
+sesion-botones */
+
+.contenedor-copiar{
+    width: 100%;
+    height: 20%;
+    margin-top: 20px;
+}
+
+.boton-copiar{
+    background: #124559;
+    border: 2px solid white;
+    border-radius: 10px;
+    color: aliceblue;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 15px;
+    height: 2.5rem;
+    transition: 1.5s all;
+    margin: auto;
+    width: 40%;
+    transform: scale(1.1);
+}
+
+/* sesion-resultados */
+
+.contenedor-muneco-en{
+    box-sizing: border-box;
+    height: 20rem;
+    overflow: auto;
+    text-align: center;
+    padding-top: 1rem;
+    width: 100%;
+}
+
+.contenedor-resultado{
+    width: 100%;
+    height: 16rem;
+    font-size: 17px;
+    color: aliceblue;
+    box-sizing: border-box;
+    margin-top: -8.5rem;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.titulo-encriptado{
+    color: lightgray;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: oblique;
+    margin-top: 6rem;
+}
+
+.texto-resultado{
+    background: #161a1d;
+    border: none;
+    color: aliceblue;
+    display: flex;
+    font-family: monospace;
+    height: 13rem;
+    line-height: 1.2rem;
+    margin: 2rem auto;
+    padding-bottom: .5rem;
+    resize: none;
+    width: 92%;
+    text-align: center;
+}
+
+/* sesion-secundaria */
+
+.seccion2{
+    align-items: center;
+    background: #161a1d;
+    border-radius: 15px;
+    box-sizing: border-box;
+    box-shadow: 10px 10px 15px 10px black;
+    display: flex;
+    flex-direction: column;
+    margin-right: 4rem;
+    height: 100%;
+    width: 44%;
+}
+
+.contenedor-muneco{
+    box-sizing: border-box;
+    height: 60%;
+    padding-top: 5rem;
+    text-align: center;
+    overflow: auto;
+    width: 100%;
+}
+
+.contenedor-h3{
+    color: aliceblue;
+    font-weight: bold;
+    font-style: oblique;
+    font-family: sans-serif;
+    height: 18%;
+    text-align: center;
+    margin: 1rem 0;
+    width: 100%;
+}
+
+.contenedor-parrafo{
+    color: aliceblue;
+    font-family: sans-serif;
+    height: 20%;
+    text-align: center;
+    margin-top: -2rem;
+    width: 100%;
+}
+
+.ocultar {
+    display: none;
+}
+
+.pie__pagina{
+    background: #161a1d;
+}
+
+.footer__principal{
+    display: flex; 
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer__imagen{
+    width: 28px;
+    height: 28px;
+}
+
+.ocultar{
+    display: none;
+}

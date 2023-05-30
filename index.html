@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div>
+        <header class="cabecera">
+            <h1><img class="logo" src="imagenes/logoalur.png" alt="Logo Alura"></h1>
+        </header>
+    
+        <main>
+            <section class="seccion1">
+                <textarea class="area" id="inputText" placeholder="Ingrese su texto aquí" cols="50" rows="10"></textarea>
+    
+                <div class="advertencia">
+    
+                    <img class="iconito" src="imagenes/iconito1.png">
+    
+                    <aside class="letra-adver">No caracteres especiales.</aside>
+                </div>
+    
+                <div class="contenedor-botones">
+                    <input type="button" class="boton-encriptar" value="Encriptar">
+                    <input type="button" class="boton-desencriptar" value="Desencriptar">
+                </div>
+                
+            </section>
+    
+            <section class="seccion2">
+    
+                <div class="contenedor-muneco">
+                    <img src="imagenes/investigador.png" width="180" height="180" alt="Imagen investigador">
+                </div>
+    
+                <div class="contenedor-h3">
+                    <h3 class="ajustes-h3">Ningún mensaje fue encontrado</h3>
+                </div>
+    
+                <div class="contenedor-parrafo">
+                    <p class="ajustes-parrafo">Ingresa el texto que deseas encriptar o desencriptar</p>
+                </div>
+    
+                <div class="contenedor-muneco-en ocultar">
+                    <img id="ocultar-muneco" src="imagenes/investigador2.png" width="140" height="140" alt="Imagen investigador2">
+                </div>
+    
+                <div class="contenedor-resultado ocultar">
+                    <h3 class="titulo-encriptado" id="ocultar-titulo-encriptado">Texto Encriptado</h3>
+                    <textarea class="texto-resultado" id="textoResultado" cols="50" rows="10"></textarea>
+                </div>
+    
+                <div class="contenedor-copiar ocultar">
+                    <input type="button" class="boton-copiar" id="copiar" onclick="copyToClickBoard()" value="copiar">
+                </div>
+            </section>
+        </main>
+    </div>
+    <div  class="pie__pagina">
+        <footer class="footer__principal">
+            <div>
+                <a  class="footer_sociales" href="https://github.com/Bagse" target="_blank"><img src="imagenes/github.png" alt="logo-github"></a>
+            </div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+</body>
+</html>
